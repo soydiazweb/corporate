@@ -1,0 +1,4 @@
+# gitignore template for Drupal 10 profile
+#
+
+.DS_Store

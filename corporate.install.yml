@@ -1,0 +1,5 @@
+dependencies:
+  config_split:config_split
+  config_split:development.split.config
+  config_split:staging.split.config
+  config_split:production.split.config
