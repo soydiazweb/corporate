@@ -1,0 +1,10 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_textual
+id: node.pagina_textual
+target_entity_type_id: node
+target_bundle: pagina_textual
+default_langcode: site_default
+language_alterable: false

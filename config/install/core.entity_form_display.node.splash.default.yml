@@ -1,0 +1,71 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.splash.field_descripcion
+    - field.field.node.splash.field_imagen
+    - field.field.node.splash.field_seo
+    - field.field.node.splash.field_tipo
+    - image.style.thumbnail
+    - node.type.splash
+  module:
+    - image
+    - metatag
+    - path
+    - text
+id: node.splash.default
+targetEntityType: node
+bundle: splash
+mode: default
+content:
+  field_descripcion:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_imagen:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_seo:
+    type: metatag_firehose
+    weight: 2
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_tipo:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

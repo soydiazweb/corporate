@@ -1,0 +1,6 @@
+langcode: es
+logo:
+  use_default: false
+  path: themes/custom/frontend/assets/gin/logo_gin_login.svg
+brand_image:
+  use_default: true

@@ -1,0 +1,19 @@
+langcode: es
+status: false
+dependencies: {  }
+id: dev
+label: Dev
+description: ''
+weight: 0
+folder: ../config/dev
+module: {  }
+theme: {  }
+blacklist:
+  - mailsystem.settings
+  - phpmailer_smtp.format
+  - system.logging
+  - system.maintenance
+  - system.performance
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

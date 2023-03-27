@@ -1,0 +1,30 @@
+langcode: es
+bannerText: 'Utilizamos cookies para mejorar nuestros servicios y mostrarte contenidos relacionados con tus preferencias. Recuerda que puedes cambiar la configuración de tu navegador u obtener más información en nuestra'
+privacyPolicy: 'Política de privacidad'
+privacyUri: /cookies/documentation
+imprint: Imprint
+imprintUri: ''
+cookieDocs: 'Política de cookies'
+cookieDocsUri: /cookies/documentation
+denyAll: 'Denegar todo'
+alwaysActive: 'Siempre activo'
+settings: Configuración
+acceptAll: 'Permitir todo'
+requiredCookies: 'Cookies de funcionalidad'
+cookieSettings: Configuración
+close: Cerrar
+readMore: 'Leer más'
+allowed: Permitido
+denied: Denegado
+settingsAllServices: 'Configuración para todos los servicios'
+saveSettings: Guardar
+default_langcode: en
+disclaimerText: 'La información de cookies está sujeta a cambios por parte de proveedores de servicios. Actualizamos la información regularmente.'
+disclaimerTextPosition: above
+processorDetailsLabel: 'Detalles de la compañia'
+processorLabel: Compañia
+processorWebsiteUrlLabel: 'Sitio web de la compañia'
+processorPrivacyPolicyUrlLabel: 'Política de privacidad de la compañia'
+processorCookiePolicyUrlLabel: 'Política de cookies de la compañia'
+processorContactLabel: 'Datos de Contacto de Protección de Datos'
+placeholderAcceptAllText: 'Permitir todas las cookies'

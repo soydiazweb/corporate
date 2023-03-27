@@ -1,0 +1,26 @@
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pagina_textual.field_descripcion
+    - field.field.node.pagina_textual.field_seo
+    - field.field.node.pagina_textual.field_titulo
+    - node.type.pagina_textual
+  module:
+    - user
+id: node.pagina_textual.teaser
+targetEntityType: node
+bundle: pagina_textual
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_descripcion: true
+  field_seo: true
+  field_titulo: true
+  langcode: true

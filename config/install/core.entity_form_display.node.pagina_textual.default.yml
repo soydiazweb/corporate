@@ -1,0 +1,77 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_textual.field_descripcion
+    - field.field.node.pagina_textual.field_seo
+    - field.field.node.pagina_textual.field_titulo
+    - node.type.pagina_textual
+  module:
+    - metatag
+    - path
+    - text
+id: node.pagina_textual.default
+targetEntityType: node
+bundle: pagina_textual
+mode: default
+content:
+  field_descripcion:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_seo:
+    type: metatag_firehose
+    weight: 3
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_titulo:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  status: true
+  sticky: true

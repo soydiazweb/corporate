@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies: {  }
+name: 'HTML básico'
+format: html_basico
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<p class="G-txt--supergigante G-txt--xxgigante G-txt--xgigante G-txt--xxl G-txt--l G-txt--xxxm G-txt--xxm G-txt--xm G-txt--m G-txt--xxxs"> <h1 class="G-txt--supergigante"> <h2 class="G-txt--xxgigante"> <h3 class="G-txt--xgigante"> <h4 class="G-txt--xxl"> <h5 class="G-txt--l">'
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

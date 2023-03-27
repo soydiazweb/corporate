@@ -1,0 +1,37 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.inicio.field_descripcion
+    - field.field.node.inicio.field_seo
+    - node.type.inicio
+  module:
+    - metatag
+    - text
+    - user
+id: node.inicio.default
+targetEntityType: node
+bundle: inicio
+mode: default
+content:
+  field_descripcion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_seo:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

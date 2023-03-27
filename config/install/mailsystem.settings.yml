@@ -1,0 +1,5 @@
+langcode: es
+theme: frontend
+defaults:
+  sender: mime_mail
+  formatter: mime_mail

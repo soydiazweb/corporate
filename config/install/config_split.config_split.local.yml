@@ -1,0 +1,21 @@
+langcode: es
+status: false
+dependencies: {  }
+id: local
+label: Local
+description: ''
+weight: 0
+folder: ../config/local
+module: {  }
+theme: {  }
+blacklist:
+  - mailsystem.settings
+  - phpmailer_smtp.settings
+  - system.logging
+  - system.maintenance
+  - system.performance
+  - devel.settings
+  - devel.toolbar.settings
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

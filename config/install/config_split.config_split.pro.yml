@@ -1,0 +1,20 @@
+langcode: es
+status: false
+dependencies: {  }
+id: pro
+label: Pro
+description: ''
+weight: 0
+folder: ../config/pro
+module: {  }
+theme: {  }
+blacklist:
+  - mailsystem.settings
+  - phpmailer_smtp.settings
+  - system.logging
+  - system.maintenance
+  - system.performance
+  - google_tag.container.contenedor_gtag_produccion
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

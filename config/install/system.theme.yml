@@ -1,2 +1,3 @@
+langcode: es
 admin: gin
-default: claro
+default: frontend

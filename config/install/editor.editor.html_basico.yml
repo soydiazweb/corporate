@@ -1,0 +1,104 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.html_basico
+  module:
+    - ckeditor5
+format: html_basico
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+      - style
+      - underline
+      - strikethrough
+      - superscript
+      - subscript
+      - blockQuote
+      - link
+      - numberedList
+      - bulletedList
+      - alignment
+      - removeFormat
+      - insertTable
+      - indent
+      - drupalInsertImage
+      - outdent
+  plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_imageResize:
+      allow_resize: true
+    ckeditor5_list:
+      reversed: true
+      startIndex: true
+    ckeditor5_style:
+      styles:
+        -
+          label: 'P Texto 52'
+          element: '<p class="G-txt--supergigante">'
+        -
+          label: 'H1 Texto 52'
+          element: '<h1 class="G-txt--supergigante">'
+        -
+          label: 'P Texto 48'
+          element: '<p class="G-txt--xxgigante">'
+        -
+          label: 'H2 Texto 48'
+          element: '<h2 class="G-txt--xxgigante">'
+        -
+          label: 'P Texto 44'
+          element: '<p class="G-txt--xgigante">'
+        -
+          label: 'H3 Texto 44'
+          element: '<h3 class="G-txt--xgigante">'
+        -
+          label: 'P Texto 36'
+          element: '<p class="G-txt--xxl">'
+        -
+          label: 'H4 Texto 36'
+          element: '<h4 class="G-txt--xxl">'
+        -
+          label: 'P Texto 28'
+          element: '<p class="G-txt--l">'
+        -
+          label: 'H5 Texto 28'
+          element: '<h5 class="G-txt--l">'
+        -
+          label: 'P Texto 24'
+          element: '<p class="G-txt--xxxm">'
+        -
+          label: 'P Texto 20'
+          element: '<p class="G-txt--xxm">'
+        -
+          label: 'P Texto 18'
+          element: '<p class="G-txt--xm">'
+        -
+          label: 'P Texto 16'
+          element: '<p class="G-txt--m">'
+        -
+          label: 'P Texto 14'
+          element: '<p class="G-txt--xxxs">'
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: 0
+    height: 0

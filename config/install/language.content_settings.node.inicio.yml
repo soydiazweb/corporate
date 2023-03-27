@@ -1,0 +1,10 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.inicio
+id: node.inicio
+target_entity_type_id: node
+target_bundle: inicio
+default_langcode: site_default
+language_alterable: false

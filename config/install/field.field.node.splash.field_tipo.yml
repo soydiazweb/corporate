@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo
+    - node.type.splash
+  module:
+    - options
+id: node.splash.field_tipo
+field_name: field_tipo
+entity_type: node
+bundle: splash
+label: Tipo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

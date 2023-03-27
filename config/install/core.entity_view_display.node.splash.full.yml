@@ -1,0 +1,46 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.splash.field_descripcion
+    - field.field.node.splash.field_imagen
+    - field.field.node.splash.field_seo
+    - field.field.node.splash.field_tipo
+    - node.type.splash
+  module:
+    - image
+    - text
+    - user
+id: node.splash.full
+targetEntityType: node
+bundle: splash
+mode: full
+content:
+  field_descripcion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_seo: true
+  field_tipo: true
+  langcode: true

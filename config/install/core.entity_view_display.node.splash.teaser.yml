@@ -1,0 +1,28 @@
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.splash.field_descripcion
+    - field.field.node.splash.field_imagen
+    - field.field.node.splash.field_seo
+    - field.field.node.splash.field_tipo
+    - node.type.splash
+  module:
+    - user
+id: node.splash.teaser
+targetEntityType: node
+bundle: splash
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_descripcion: true
+  field_imagen: true
+  field_seo: true
+  field_tipo: true
+  langcode: true

@@ -1,0 +1,59 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.splash.field_descripcion
+    - field.field.node.splash.field_imagen
+    - field.field.node.splash.field_seo
+    - field.field.node.splash.field_tipo
+    - node.type.splash
+  module:
+    - image
+    - metatag
+    - options
+    - text
+    - user
+id: node.splash.default
+targetEntityType: node
+bundle: splash
+mode: default
+content:
+  field_descripcion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_seo:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_tipo:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,21 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descripcion
+    - node.type.splash
+  module:
+    - text
+id: node.splash.field_descripcion
+field_name: field_descripcion
+entity_type: node
+bundle: splash
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

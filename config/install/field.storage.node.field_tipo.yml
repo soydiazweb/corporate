@@ -1,0 +1,38 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tipo
+field_name: field_tipo
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: acceso_denegado
+      label: 'Acceso denegado'
+    -
+      value: pagina_no_encontrada
+      label: 'Página no encontrada'
+    -
+      value: sitio_en_mantenimiento
+      label: 'Sitio en mantenimiento'
+    -
+      value: tpv_respuesta_ok
+      label: 'Respuesta TPV OK'
+    -
+      value: tpv_respuesta_ko
+      label: 'Respuesta TPV KO'
+    -
+      value: otro
+      label: Otro
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

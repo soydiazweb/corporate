@@ -1,0 +1,19 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - frontend
+id: frontend_mensajes
+theme: frontend
+region: content
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Mensajes
+  label_display: '0'
+  provider: system
+visibility: {  }

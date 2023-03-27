@@ -1,0 +1,46 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_textual.field_descripcion
+    - field.field.node.pagina_textual.field_seo
+    - field.field.node.pagina_textual.field_titulo
+    - node.type.pagina_textual
+  module:
+    - metatag
+    - text
+    - user
+id: node.pagina_textual.default
+targetEntityType: node
+bundle: pagina_textual
+mode: default
+content:
+  field_descripcion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_seo:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_titulo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

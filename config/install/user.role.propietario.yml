@@ -1,0 +1,8 @@
+langcode: es
+status: true
+dependencies: {  }
+id: propietario
+label: Propietario
+weight: 2
+is_admin: null
+permissions: {  }
